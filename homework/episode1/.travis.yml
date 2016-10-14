@@ -1,0 +1,24 @@
+language: generic
+
+sudo: required
+
+dist: trusty
+
+services:
+  - docker
+
+before_install:
+  - sudo pip install --user codecov
+
+install:
+  - docker pull lamtev/java
+
+matrix:
+  include:
+    - env: EPISODE="episode1"
+
+script:
+  - docker run -v $TRAVIS_BUILD_DIR:/ajc lamtev/java /bin/bash -c " cd ajc/homework/${EPISODE} && cloc * && gradle build "
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
