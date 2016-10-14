@@ -1,3 +1,4 @@
 rootProject.name = 'episode1'
 include 'core'
+include 'cli'
 

@@ -1,0 +1,15 @@
+dependencies {
+    compile project(':core')
+}
+
+jar {
+    manifest {
+        attributes(
+                "Main-Class": "edu.technopolis.homework.cli.MatrixMultiplication"
+        )
+    }
+
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}

@@ -46,7 +46,7 @@ public class Matrix implements Cloneable{
             throw new RuntimeException(
                     "first matrix columns value: " +
                     columns() +
-                    " not equal to second matrix rows value:" +
+                    " not equal to second matrix rows value: " +
                     multiplier.rows()
             );
         }
