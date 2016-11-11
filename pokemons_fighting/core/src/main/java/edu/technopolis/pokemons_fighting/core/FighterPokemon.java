@@ -7,5 +7,7 @@ public interface FighterPokemon extends JustPokemon {
     void attackUsingFeet();
     void defendFromFistsKick();
     void defendFromFeetKick();
+    ActionType getActionType();
     void notifyFightingController(ActionType actionType);
+    void update();
 }

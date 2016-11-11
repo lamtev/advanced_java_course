@@ -13,6 +13,13 @@ public class Pokemon implements FighterPokemon {
         fightingController.addFighter(this);
     }
 
+    @Override
+    public int getPower() {
+        return power;
+    }
+
+
+    @Override
     public ActionType getActionType() {
         return actionType;
     }
@@ -63,6 +70,11 @@ public class Pokemon implements FighterPokemon {
     @Override
     public void notifyFightingController(ActionType actionType) {
         fightingController.update();
+    }
+
+    @Override
+    public void update() {
+        power--;
     }
 
 }

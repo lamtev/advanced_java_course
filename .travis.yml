@@ -20,11 +20,13 @@ matrix:
 
 script:
   - docker run -v $TRAVIS_BUILD_DIR:/ajc lamtev/java /bin/bash -c " cd ajc/${EPISODE} && cloc * && gradle build "
-  - sudo mv ${TRAVIS_BUILD_DIR}/${EPISODE}/cli/build/libs/cli-1.0.jar ${TRAVIS_BUILD_DIR}/${EPISODE}/cli/build/libs/MatrixMultiplication.jar
-  - sudo chmod 777 ${TRAVIS_BUILD_DIR}/${EPISODE}/cli/build/libs/MatrixMultiplication.jar
   
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+
+before_deploy:
+  #- sudo mv ${TRAVIS_BUILD_DIR}/${EPISODE}/cli/build/libs/cli-1.0.jar ${TRAVIS_BUILD_DIR}/${EPISODE}/cli/build/libs/MatrixMultiplication.jar
+  #- sudo chmod 777 ${TRAVIS_BUILD_DIR}/${EPISODE}/cli/build/libs/MatrixMultiplication.jar
   
 deploy:
   provider: releases
