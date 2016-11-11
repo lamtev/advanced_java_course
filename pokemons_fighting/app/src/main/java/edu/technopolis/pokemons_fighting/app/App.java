@@ -19,6 +19,15 @@ public class App {
         Random random = new Random(System.currentTimeMillis());
         int magic;
         while(first.getPower() > 0 && second.getPower() > 0) {
+            System.out.println();
+            System.out.println("Pokemon 1");
+            System.out.println("Power: " + first.getPower());
+            System.out.println("Action: " + (first.getActionType() != null ? first.getActionType().name() : "not happened"));
+            System.out.println();
+            System.out.println("Pokemon 2");
+            System.out.println("Power: " + second.getPower());
+            System.out.println("Action: " + (second.getActionType() != null ? second.getActionType().name() : "not happened"));
+            System.out.println();
             magic = Math.abs(random.nextInt()) % 4;
             switch (magic) {
                 case 0:
@@ -34,11 +43,6 @@ public class App {
                     first.defendFromFistsKick();
                     break;
             }
-            System.out.println();
-            System.out.println("Pokemon 1");
-            System.out.println("Power: " + first.getPower());
-            System.out.println("Action: " + first.getActionType().name());
-            System.out.println();
 
             magic = Math.abs(random.nextInt()) % 4;
             switch (magic) {
@@ -56,11 +60,8 @@ public class App {
                     break;
             }
         }
-        System.out.println();
-        System.out.println("Pokemon 2");
-        System.out.println("Power: " + second.getPower());
-        System.out.println("Action: " + first.getActionType().name());
-        System.out.println();
+        System.out.println("Pokemon " + (first.getPower() > second.getPower() ? 1 : 2) + " tired!");
+
     }
 
 }

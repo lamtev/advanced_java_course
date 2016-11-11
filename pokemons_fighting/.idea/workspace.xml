@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39a7a4ee-e18f-468d-b641-246a35803372" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.travis.yml" afterPath="$PROJECT_DIR$/../.travis.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/edu/technopolis/pokemons_fighting/app/App.java" afterPath="$PROJECT_DIR$/app/src/main/java/edu/technopolis/pokemons_fighting/app/App.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/edu/technopolis/pokemons_fighting/core/FighterPokemon.java" afterPath="$PROJECT_DIR$/core/src/main/java/edu/technopolis/pokemons_fighting/core/FighterPokemon.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/edu/technopolis/pokemons_fighting/core/FightingController.java" afterPath="$PROJECT_DIR$/core/src/main/java/edu/technopolis/pokemons_fighting/core/FightingController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/edu/technopolis/pokemons_fighting/core/JustPokemon.java" afterPath="$PROJECT_DIR$/core/src/main/java/edu/technopolis/pokemons_fighting/core/JustPokemon.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/edu/technopolis/pokemons_fighting/core/Pokemon.java" afterPath="$PROJECT_DIR$/core/src/main/java/edu/technopolis/pokemons_fighting/core/Pokemon.java" />
     </list>
     <ignored path="pokemons_fighting.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/technopolis/pokemons_fighting/app/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="642">
-              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+            <state relative-caret-position="88">
+              <caret line="62" column="40" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#321#322#0" expanded="true" />
@@ -132,11 +128,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FightingController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FightingController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/edu/technopolis/pokemons_fighting/core/FightingController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+            <state relative-caret-position="198">
+              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -765,8 +761,8 @@
         <option value="$PROJECT_DIR$/core/src/main/java/edu/technopolis/pokemons_fighting/core/JustPokemon.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/edu/technopolis/pokemons_fighting/core/Pokemon.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/edu/technopolis/pokemons_fighting/core/ActionType.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/edu/technopolis/pokemons_fighting/app/App.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/edu/technopolis/pokemons_fighting/core/FightingController.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/edu/technopolis/pokemons_fighting/app/App.java" />
       </list>
     </option>
   </component>
@@ -1406,7 +1402,7 @@
       <option name="presentableId" value="Default" />
       <updated>1478870812655</updated>
       <workItem from="1478870815887" duration="5343000" />
-      <workItem from="1478877397631" duration="2354000" />
+      <workItem from="1478877397631" duration="4014000" />
     </task>
     <task id="LOCAL-00001" summary="add pokemons_fighting">
       <created>1478876118054</created>
@@ -1415,11 +1411,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478876118054</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add app to pokemons_fighting">
+      <created>1478879780105</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1478879780105</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7697000" />
+    <option name="totallyTimeSpent" value="9357000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1433,7 +1436,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53227633" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.53227633" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1467,7 +1470,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add pokemons_fighting" />
-    <option name="LAST_COMMIT_MESSAGE" value="add pokemons_fighting" />
+    <MESSAGE value="add app to pokemons_fighting" />
+    <option name="LAST_COMMIT_MESSAGE" value="add app to pokemons_fighting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1608,18 +1612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/technopolis/pokemons_fighting/app/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#321#322#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/edu/technopolis/pokemons_fighting/core/Pokemon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -1653,9 +1645,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/edu/technopolis/pokemons_fighting/core/FightingController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+        <state relative-caret-position="198">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/technopolis/pokemons_fighting/app/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="62" column="40" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#352#353#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

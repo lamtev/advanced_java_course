@@ -24,12 +24,14 @@ public class FightingController {
     public void update() {
         switch (getCurrentFighter().getActionType()) {
             case DEFENCE_FROM_FEET:
-                if (!getPreviousFighter().getActionType().equals(ATTACK_USING_FEET)) {
+                if (getPreviousFighter().getActionType() != null &&
+                        !getPreviousFighter().getActionType().equals(ATTACK_USING_FEET)) {
                     getPreviousFighter().update();
                 }
                 break;
             case DEFENCE_FROM_FISTS:
-                if (!getPreviousFighter().getActionType().equals(ATTACK_USING_FISTS)) {
+                if (getPreviousFighter().getActionType() != null &&
+                        !getPreviousFighter().getActionType().equals(ATTACK_USING_FISTS)) {
                     getPreviousFighter().update();
                 }
                 break;
