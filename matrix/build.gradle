@@ -1,0 +1,21 @@
+allprojects {
+    group 'edu.technopolis.matrix'
+    version '1.0'
+    apply plugin: 'java'
+
+    repositories {
+        jcenter()
+    }
+
+    apply plugin: 'findbugs'
+    tasks.withType(FindBugs) {
+        reports {
+            xml.enabled true
+        }
+    }
+    findbugs {
+        effort = "max"
+        reportLevel = "low"
+        ignoreFailures = true
+    }
+}

@@ -1,0 +1,4 @@
+rootProject.name = 'pokemons_fighting'
+include 'core'
+include 'app'
+
