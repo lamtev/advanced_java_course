@@ -16,6 +16,7 @@ install:
 matrix:
   include:
     - env: HW="matrix"
+    - env: HW="pokemons"
 
 script:
   - docker run -v $TRAVIS_BUILD_DIR:/ajc lamtev/java /bin/bash -c " cd ajc/${HW} && cloc * && gradle build "
@@ -24,8 +25,7 @@ after_success:
   - bash <(curl -s https://codecov.io/bash)
 
 before_deploy:
-  - sudo mv ${TRAVIS_BUILD_DIR}/${HW}/cli/build/libs/cli-1.0.jar ${TRAVIS_BUILD_DIR}/${HW}/cli/build/libs/${HW}.jar
-  - sudo chmod 777 ${TRAVIS_BUILD_DIR}/${HW}/cli/build/libs/${HW}.jar
+  - if [ ${HW} != "lfu" ]; then sudo mv ${TRAVIS_BUILD_DIR}/${HW}/cli/build/libs/cli-1.0.jar ${TRAVIS_BUILD_DIR}/${HW}/cli/build/libs/${HW}.jar && sudo chmod 777 ${TRAVIS_BUILD_DIR}/${HW}/cli/build/libs/${HW}.jar; fi
   
 deploy:
   provider: releases
