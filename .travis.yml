@@ -17,6 +17,7 @@ matrix:
   include:
     - env: HW="matrix"
     - env: HW="pokemons"
+    - env: HW="lfu"
 
 script:
   - docker run -v $TRAVIS_BUILD_DIR:/ajc lamtev/java /bin/bash -c " cd ajc/${HW} && cloc * && gradle build "
