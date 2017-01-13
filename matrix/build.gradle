@@ -4,7 +4,7 @@ allprojects {
     apply plugin: 'java'
 
     repositories {
-        mavenCentral()
+        jcenter()
     }
 
     apply plugin: 'findbugs'
